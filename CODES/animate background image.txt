@@ -1,0 +1,16 @@
+#banner {
+    background: url('./backgroundimage.png') 0 0 repeat;
+    -webkit-animation: animate_background 2s linear 0s infinite;
+    -moz-animation: animate_background 2s linear 0s infinite;
+    -o-animation: animate_background 2s linear 0s infinite;
+    animation: animate_background 2s linear 0s infinite;
+}
+
+@-moz-keyframes animate_background { 
+    from { 
+        background-position: 0 0;
+    } 
+    to { 
+        background-position: 0 -200px;
+    } 
+}

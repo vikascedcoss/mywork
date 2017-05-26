@@ -1,0 +1,8 @@
+$(document).scroll(function() {
+				var y = $(this).scrollTop();
+				if (y > 1200) {
+					$('.one').fadeIn();
+				} else {
+					$('.one').fadeOut();
+				}
+			});

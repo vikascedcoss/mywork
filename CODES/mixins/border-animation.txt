@@ -1,0 +1,8 @@
+@mixin border-animation{
+  background-image: linear-gradient(#009688, #009688), linear-gradient(#d2d2d2, #d2d2d2) !important;
+  background-size: 100% 2px, 100% 1px !important;
+  border: medium none !important;
+  box-shadow: none !important;
+  outline: medium none !important;
+  transition-duration: 0.3s !important;
+}

@@ -1,0 +1,15 @@
+// changing navbar background-color after scrolling
+
+
+  jQuery(document).ready(function(){
+    jQuery(window).scroll(function() { // check if scroll event happened
+      if (jQuery(document).scrollTop() > 202) { // check if user scrolled more than 50 from top of the browser window
+        jQuery(".navbar-fixed-top").css({
+        "background-color": "rgba(0,0,0,0.85)",
+        "transition": '0.3s linear all'
+        }); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+      } else {
+        jQuery(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+      }
+    });
+  });

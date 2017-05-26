@@ -1,0 +1,4 @@
+$("#nav_btn").click(function() {
+	$('html, body').animate({
+	scrollTop: $("#section_id").offset().top }, 1000);
+	});

@@ -1,0 +1,15 @@
+$(function(){
+
+  var url = window.location.href; 
+
+  // passes on every "a" tag 
+   $("#navbar .nav a").each(function() {
+          // checks if its the same on the address bar
+       if(url == (this.href)) { 
+            $('ul.nav li > a').removeClass('active')
+           $(this).closest("a").addClass("active");
+       }
+});
+
+});
+ 
