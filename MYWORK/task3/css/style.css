@@ -1,0 +1,55 @@
+.body {
+	margin:10px 0; 
+  background-image: url(../images/img.jpg);
+  background-size: cover;
+}
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.tbl-test {
+  border: 2px solid #000;
+  margin: 0 auto;
+}
+
+.tbl-test th, td {
+  border: 2px solid #000;
+  padding: 2%;
+  width: 15%;
+}
+
+table thead tr{
+	background-color: #000;
+	color: #fff;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color:  #ffe6f7;
+}
+
+table tbody tr:nth-of-type(odd) {
+  background-color:  #ddccff;
+}
+
+tr {
+  text-align: center;
+}
+
+
+tbody tr:nth-child(2) > td:nth-child(2) {
+  border: none;
+}
+
+form {
+  margin: 0 auto;
+  width: 80%;
+}
+
+input:checked{
+	height: 50px;
+	width: 50px;
+}
+input:in-range{
+	background-color: #ffb3ff;
+}

@@ -1,0 +1,61 @@
+div {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  border: 15px solid transparent;
+  border-image: url(../images/border.png) 30% stretch;
+
+}
+
+
+form {
+  background: url("../images/flwr.gif") no-repeat scroll left top / 100px auto, rgba(0, 0, 0, 0) url("../images/flwr.gif") no-repeat scroll right bottom / 200px auto;
+  box-sizing: border-box;
+  padding: 25px 90px;
+  width: 100%;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+input:focus{
+	background-color: lightgreen;
+	color:#fff;
+	font-weight: bold;
+}
+
+textarea{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  margin: 5px 0;
+    font-weight: normal;
+
+}
+
+textarea:focus{
+ background-color: lightgreen;
+ color:#fff;
+ font-weight: bold;
+}
+
+button {
+  background-color: #ff5e00;
+  box-shadow: 5px 5px 3px aquamarine;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: green;
+  box-shadow: 5px 5px 3px chartreuse;
+   font-weight: bold;
+}

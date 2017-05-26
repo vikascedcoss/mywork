@@ -1,0 +1,259 @@
+body{
+	background-color:#ecf0f3;
+}
+#wrapper{
+	margin: 50px 0;
+	.wrapper-div{
+		background-color:#fff;
+		margin:30px 0 30px;
+		.content-container{
+			padding:15px;
+		}
+		.social-media.text-center{
+			.btn{
+				width:35%;
+			}
+			.center-line{
+				margin:25px 0;
+				position:relative;
+				color:#aaa;
+				display:inline-block;
+				&:before{
+					border: 1px solid #d1d1d1;
+					content: "";
+					left: -60px;
+					position: absolute;
+					top: 9px;
+					width: 50px;
+				}
+				&:after{
+					border: 1px solid #d1d1d1;
+					content: "";
+					right: -60px;
+					position: absolute;
+					top: 10px;
+					width: 50px;
+				}
+			}
+			
+		}
+		.sign-up-in{
+			border-top: 1px solid #d1d1d1;
+			line-height: 21px;
+			// margin-top: 30px;
+			padding: 12px;
+			background-color:#f8f9f9;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		.image-wrapper{
+			position:relative;
+			img{
+				border-top-left-radius:10px;
+				border-top-right-radius:10px;
+			}
+			.img-content{
+				bottom: 35px;
+				color: #ffffff;
+				position: absolute;
+			}
+		}
+		.social-media{
+			p{
+				margin-top:15px;
+			}
+		}
+		.follow-author{
+			margin-top:25px;
+			padding-top:15px;
+			border-top:1px solid #d1d1d1;
+			.author-detail{
+				display:inline-block;
+				margin-top:0;
+			}
+			span:nth-child(2){
+				margin-top:8px;
+			}
+		}
+		.progress{
+			height:15px;
+		}
+		.image-wrapper-author {
+			background: rgba(0, 0, 0, 0) url("../img/layer-23.png") repeat scroll 0 0 / cover ;
+			height: 180px;
+			position: relative;
+			border-top-left-radius:10px;
+			border-top-right-radius:10px;
+			img {
+				bottom: -58px;
+				left: 0;
+				margin: 0 auto;
+				position: absolute;
+				right: 0;
+			}
+		}
+		.follow{
+			border-top: 1px solid #d1d1d1;
+			background-color:#f8f9f9;
+			.follower{
+				width: 50%;
+				border-right :1px solid #d1d1d1;
+			}
+			.following{
+				width: 49.5%;
+			}
+		}
+
+		.follow-me{
+			background-color:#66d99f;
+			a{
+				color:#fff;
+				text-decoration:none;
+			}
+		}
+		.author-detail{
+			margin-top:50px;
+		}
+		.message-sender{
+			ul{
+				margin: 0;
+				li{
+					padding: 15px 20px;
+					border-bottom: 1px solid #d1d1d1;
+					div{
+						float:left;
+					}
+					.m-sender-image{
+						position :relative;
+						.badge {
+							background-color: #ff6286;
+							border-radius: 50%;
+							height: 19px;
+							left: 28px;
+							line-height: 14px;
+							position: absolute;
+							top: -7px;
+							width: 19px;
+							box-shadow: 0 0 0px 2px #fff;
+						}
+					}
+					.m-sender-message{
+						margin-left: 15px;
+						p{
+							margin: 0;
+							span{
+								font-size: 13px;
+								color:#969696;
+							}
+						}
+						span{
+							font-size :13px; 
+							color: #969696;
+						}
+					}
+				}
+			}
+		}
+		.message-follow{
+			background-color:#f8f9f9;
+			border-top: none;
+		}
+		.subscribe-newsletter{
+			padding:15px;
+			padding-bottom : 30px;
+		}
+		.news{
+			.nav-tabs{
+				background-color:#f8f9f9;
+				li{
+					padding:0;
+					border: none;
+				}
+
+			}
+			.news-senders{
+				li{
+					border: none;
+					padding-top:10px;
+					padding-bottom:10px;
+				}
+			}
+		}
+		.checkout{
+			padding: 15px;
+			.message-sender{
+				.news-senders{
+					li{
+						padding: 10px 0;
+						.m-sender-message{
+							h5{
+								margin:0;
+							}
+							h6{
+								color:#66d99f;
+								font-weight:bold;
+								margin:0;
+							}
+							span{
+								font-size:12px;
+							}
+						}
+					}
+					.total{
+						border-top:1px solid #d1d1d1;
+						padding-top:20px;
+						h5{
+							margin:0;
+						}
+						.price{
+							font-size:12px;
+							color:#969696;
+						}
+					}
+				}
+				
+			}
+		}
+		.cart-div{
+			.cart-item{
+				img{
+					border-top-left-radius:10px;
+					border-top-right-radius:10px;
+				}
+			}
+			.cart-item-desc{
+				padding: 15px;
+				p{
+					font-size:12px;
+				}
+				h5{
+					font-weight:bold;
+				}
+				.price{
+					color:#66d99f
+				}
+				button{
+					font-size: 13px;
+				}
+				.btn-default{
+					background-color:#ecf0f3;
+					color:#aab5bf;
+				}
+			}
+		}
+		.video-div{
+			.video-item-desc{
+				padding:15px;
+				ul{
+					margin:0;
+					padding:0;
+					li{
+						padding: 15px 0;
+						border-bottom: 1px solid #d1d1d1;
+					}
+				}
+			}
+		}
+
+	}	
+}

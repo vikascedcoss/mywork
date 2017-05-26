@@ -1,0 +1,394 @@
+@import "mixins";
+@import "variable";
+@include font-face("proximanova",'../fonts/proximanova/ProximaNova-Light', 500, normal, eot woff2 woff);
+body{
+	margin:0;
+	padding:0;
+	font-family:"proximanova";
+	font-weight:bold;
+}
+
+/*======================================
+=            Section Header            =
+======================================*/
+
+#main_header{
+	padding:20px;
+	.site-navbar{
+		border:none;
+		background-color: transparent;
+	}
+	.logo{
+		@include logo;
+	}
+	.menu-wrapper{
+		text-align: center;
+		.menu_items{
+			float:none;
+			display: inline-block;
+			@include link_decoration;
+			text-transform: $upper;
+			li{
+				position:relative;
+				a{
+					color:#000;
+					font-family: sans-serif;
+					font-weight: normal;
+					letter-spacing: 1px;
+					border-top:8px solid transparent;
+				}
+
+			}
+			.active{
+				a{
+					background-color:transparent;
+					border-top:8px solid #FF54B1;
+				}
+				&:before{
+					@include triangle;
+				}
+			}
+		}
+		.social-icons{
+			margin-top:14px;
+			.social_menus {
+				@include round-social-icons;
+			}
+			.search{
+				border:0;
+			}
+			img{
+				height:24px;
+			}
+
+
+		}
+	}
+
+	#header_content{
+		padding:50px 0;
+		a {
+			@include link_decoration;
+			@include header-logo;
+			
+		}
+		p{
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size:15px;
+		}
+	}
+}
+
+
+/*=====  End of Section Header  ======*/
+
+/*=================================================
+=            Section site_main_content            =
+=================================================*/
+
+#primary{
+	padding: 20px;
+	.post_area {
+		margin-top:20px;
+		.posts{
+			border:2px solid #e6e6e6;
+			padding:5px;
+			.post_pics{
+				width:50%;
+				float: left;
+				img{
+					height:256px;
+				}
+			}
+			.post_content {
+				@include post-content;
+				.entry-title{
+					font-weight: bold;
+				}
+				.date{
+					color:#969696;
+				}
+				.entry-content{
+					p{
+						margin: 0;
+
+					}
+
+					.author_name {
+						color: #ff54ed;
+					}
+				}
+				
+				.social{
+					margin-top:20px;
+					color: #969696;
+					.social_menus {
+						color: #969696;
+						display: block;
+						font-size: 16px;
+						line-height: 30px;
+					}
+				}
+			}
+		}	
+	}
+	.post_area:nth-child(even) {	
+		margin-right: 0;	
+	}
+}
+
+/*=====  End of Section site_main_content  ======*/
+
+/*==========================================
+=            Section Older post            =
+==========================================*/
+
+#older_post{
+	padding:20px;
+	margin:50px 0;
+	a {
+		@include button-design-shadow;
+	}
+}
+
+/*=====  End of Section Older post  ======*/
+
+/*=========================================
+=            Section secondary            =
+=========================================*/
+
+#secondary{
+	padding:20px;
+	.widget-title{
+		margin-bottom:50px;
+	}
+	.widget{
+		img{
+			width:100%;
+			
+		}
+	}
+	.widget-description
+	{
+		margin-top:20px;
+		p{
+			font-size:16px;
+		}
+	}
+}
+
+/*=====  End of Section secondary  ======*/
+
+/*======================================
+=            Section Footer            =
+======================================*/
+#colophon{
+	.site-info{
+		@include footer-site-info;
+		a{
+			@include link_decoration;
+			font-size:18px;
+			letter-spacing: 2px;
+			color:#fff;
+		}
+	}
+}
+
+
+/*=====  End of Section Footer  ======*/
+
+/////////////////////////////////////////////COMMENT PAGE CSS//////////////////////////////////
+
+/*========================================
+=            Section-section-page            =
+========================================*/
+
+#primary{
+	.entry-content{
+		.entry-meta{
+			margin-top: 30px;
+			color:#969696;
+			font-size: 16px;
+			word-spacing: 2px;
+			a{
+				@include link_decoration;
+				color:#969696;
+
+			}
+		}
+		.post-description{
+			p{
+				font-size:16px;
+			}
+		}
+		.author{
+			margin-top:50px;
+			font-size:16px;
+			.author_name{
+				color:#FF54B1;
+			}
+			.social{
+				float:right;
+				color:#969696;
+				.social_menus{
+
+					@include link_decoration;
+					color:#969696;
+				}
+			}
+		}
+	}
+
+	.comment-list{
+		margin-top:70px;
+		.comment-body{
+			margin-bottom:130px;
+			.content-meta{
+				.comment-author{
+					.author-image{
+						float:left;
+						margin-right:25px;
+					}
+					span{
+						margin-top:0;
+						font-size: 25px;
+					}
+					.like-author{
+						float:right;
+						@include link_decoration;
+						color:#969696;
+					}
+					.like-active{
+						color:#FF54B1;
+					}
+				}
+			}
+			.comment-content{
+				p{
+					font-size:16px;
+					color:#969696;
+				}
+			}
+			.reply{
+				float:right;
+				color:#969696;
+				.reply-btn {
+					@include reply-btn;
+				}
+				.pencil{
+					color:#969696;
+					font-size:20px;
+				}
+			}
+		}
+	}
+	.comment-list-children{
+		list-style:none;
+	}
+	.comment-respond{
+		padding-top:30px;
+		.comment-form{
+			input,textarea{
+				width:100%;
+				padding:12px;
+				margin:10px 0;
+				border:2px solid #c6c6c6;
+				resize: none;
+			}
+			.comment-submit{
+				@include button-design-shadow;
+			}
+
+		}
+	}
+}
+
+/*=====  End of Section-section-page  ======*/
+
+
+
+
+
+/*=============================================
+=            Section Media queries            =
+=============================================*/
+
+@media #{$content-section}
+{
+	#primary{
+		.post_area{
+			width:100%;
+		}
+	}
+}
+@media #{$content-section-post}
+{
+	#primary{
+		.post_area{
+			.posts{
+				.post_pics{
+					width:100%;
+				}
+				.post_content{
+					width:100%;
+				}
+			}
+		}
+	}
+}
+
+@media #{$social-icon-manage}
+{
+	#main_header{
+		.menu-wrapper{
+			text-align: left;
+			.social-icons{
+				li{
+					display:inline-block;
+					.social_menus{
+						padding-left:7px;
+					}
+				}
+			}
+			.menu_items{
+				li{
+					a{
+						border-top:none;
+
+					}
+				}
+				.active{
+					a{
+						border-left:8px solid #FF54B1;
+						border-top:none;
+					}
+					&:after{
+						@include triangle-left;
+						
+					}
+					&:before{
+						border:none;
+					}
+				}
+				
+			}
+		}
+	}
+	#older_post{
+		a{
+			padding:15px 40px;
+		}
+	}
+	
+
+}
+@media #{$button-manage}
+{
+	#older_post{
+		a{
+			padding:15px 25px;
+		}
+	}
+}
+/*=====  End of Section Media queries  ======*/

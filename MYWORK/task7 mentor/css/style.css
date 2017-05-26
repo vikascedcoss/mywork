@@ -1,0 +1,758 @@
+@font-face {
+	font-family: 'Ultra';
+	src: url('../fonts/ultra-pro/Ultra.eot');
+	src: url('../fonts/ultra-pro/Ultra.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ultra-pro/Ultra.woff2') format('woff2'),
+		url('../fonts/ultra-pro/Ultra.woff') format('woff'),
+		url('../fonts/ultra-pro/Ultra.ttf') format('truetype'),
+		url('../fonts/ultra-pro/Ultra.svg#Ultra') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  width: 100%;
+}
+/*======================================
+=            Header Section            =
+======================================*/
+header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+header .header-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  overflow: hidden;
+  padding: 10px 0;
+  width: 100%;
+}
+header .logo {
+    float: left;
+    width: 23%;
+    font-family: Ultra;
+}
+.logo > a:hover span {
+  color: #4b4b4c;
+}
+header .logo1 {
+  color: #5FCF80;
+  font-size: 35px;
+  font-weight: bold;
+}
+header .logo2 {
+  font-size: 35px;
+    color: #5FCF80;
+}
+header .nav {
+    float: right;
+    width: 77%;
+}
+header ul {
+  float: right;
+  list-style: outside none none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+header .nav-nav a:hover {
+  color: #5fcf80;
+}
+header li {
+  float: left;
+  margin: 5px 5px 0;
+  padding: 10px;
+}
+header li:nth-child(6) {
+  border-radius: 25px;
+  border: 1px solid  #5FCF80;
+  background-color: #5FCF80;
+  color:#fff; 
+  cursor: pointer;
+}
+.free-trial:hover span, .free-trial:hover{
+  background-color: #fff;
+  color: #5FCF80;
+}
+header a {
+  color: #4b4b4c;
+  font-size: 17px;
+  text-decoration: none;
+}
+header .nav-nav a > span {
+  color: #fff;
+}
+/*=====  End of Header Section  ======*/
+/*==============================
+=            SLIDER            =
+==============================*/
+.slider {
+  background: rgba(0, 0, 0, 0) url("../images/bg-banner.jpg") no-repeat scroll 0 0 / cover ;
+  padding: 170px 0 0px;
+  width: 100%;
+  position: relative;
+}
+.slider::after {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.slider .slider-wrapper {
+  color: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+  max-width: 1170px;
+  z-index: 1;
+  width: 100%;
+}
+.slider .button {
+  border: 5px solid #5fcf80;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 25px 0;
+  text-transform: uppercase;
+  width: 25%;
+}
+.slider .button > a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.slider .btn {
+  background-color: #5fcf80;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px auto 0;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 110px;
+}
+.slider .btn:hover {
+  background-color: #fff;
+  color: #5fcf80;
+  transition: .2s linear all;
+}
+.one {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  height: 55px;
+  margin: 35px auto;
+  width: 20px;
+  cursor: pointer;
+}
+.two {
+    width: 5px;
+    height: 5px;
+    border-radius:50%;
+    background-color: #fff;
+    position: relative;
+    margin:0 auto;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    50%  { right:50px; top:50px;}
+    100%  { left:0px; top:0px;}
+}
+/*=====  End of SLIDER  ======*/
+/*=======================================
+=            FEATURE SECTION            =
+=======================================*/
+.feature {
+	background: #d1d1d1;
+  	padding: 70px 0;
+  	width: 100%;
+  	background-color: #fff;
+}
+.feature .feature-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+  max-width: 1170px;
+  width: 100%;
+}
+.feature .feature-wrapper-content > p {
+  color: #957f86;
+  font-size: 17px;
+  overflow: hidden;
+}
+hr {
+  border: 2px solid #957f86;
+  margin: 0 auto;
+  padding: 0;
+  width: 30px;
+}
+.feature .feature-logo {
+  float: left;
+  margin-top: 25px;
+  overflow: hidden;
+  width: 33.333%;
+}
+.feature .font-awesome {
+  color: #5fcf80;
+  float: left;
+  font-size: 40px;
+  margin-left: 15px;
+  text-align: left;
+  width: 12%;
+}
+.feature .font-awesome-content {
+  float: left;
+  margin-left: 18px;
+  padding-left: 0;
+  text-align: left;
+  width: 78%;
+}
+.feature h4 {
+  margin-top: 10px;
+}
+.feature .font-awesome-content > p {
+   color: #4B4B4C;
+  line-height: 20px;
+  margin-top: 0;
+}
+/*=====  End of FEATURE SECTION  ======*/
+/*=========================================
+=            SECTION FEATURE 2            =
+=========================================*/
+.feature2 {
+	background-color: #F7F7F7;
+  	padding: 70px 0;
+  	width: 100%;
+}
+.feature2 .feature-wrapper2 {
+  margin: 0 auto;
+  max-width: 1170px;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+.feature2 .feature-review {
+  float: left;
+  text-align: left;
+  width: 48%;
+  overflow: hidden;
+}
+.feature2 .feature-review-logo {
+  width: 33%;
+  float: left;
+  color: #fff;
+  text-align: center;
+}
+.feature2 .logo-container {
+  background-color: #5fcf80;
+  border: 1px solid transparent;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-left: 15px;
+  padding: 15px 0 5px;
+  width: 60%;
+  border-top-right-radius: 50px;
+}
+.feature2  h2 {
+  font-size: 35px;
+}
+.feature2 .logo-container > p {
+  margin-bottom: 30px;
+}
+.feature2 .logo-container > span {
+  font-size: 150px;
+}
+.feature2 h3 {
+  font-size: 35px;
+  font-weight: normal;
+  padding-left: 15px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feature2 .feature-review > h4 {
+  font-size: 20px;
+  padding-left: 15px;
+  color: #5fcf80;
+}
+.feature2 .feature-review > p {
+  font-size: 17px;
+  line-height: 20px;
+  margin-left: 15px;
+  color: #4B4B4C;
+}
+/*=====  End of SECTION FEATURE 2  ======*/
+/*=========================================
+=            SUBSCRIBE SECTION            =
+=========================================*/
+.subscribe {
+  background-color: #fff;
+  padding: 150px 0;
+  width: 100%;
+}
+.subscribe-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+  max-width: 1170px;
+  width: 100%;
+}
+.subscribe-now > h2 {
+  font-size: 29px;
+  margin: 0;
+  padding: 0;
+  color: #4B4B4C;
+}
+.subscribe-now > p {
+  color: #717f86;
+  font-size: 24px;
+  margin: 0;
+  padding: 20px 0 30px;
+}
+.subscribe .textbox {
+  border: 1px solid #5FCF80;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 15px 0 15px 35px;
+  width: 25%;
+  font-size: 20px;
+  background-color: #F7F7F7;
+}
+.subscribe .button {
+  background-color: #5fcf80;
+  border: medium none;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  font-size: 20px;
+  padding: 15px 0;
+  width: 12%;
+  margin-left: -5px;
+}
+/*=====  End of SUBSCRIBE SECTION  ======*/
+/*========================================
+=            WorkShop Section            =
+========================================*/
+.workshop {
+  	padding: 70px 0;
+  	width: 100%;
+  	background-color: #F7F7F7;
+}
+.workshop .workshop-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+.workshop-wrapper-content {
+  padding-top: 25px;
+  overflow: hidden;
+}
+.workshop-wrapper-content > h1 {
+  color: #4b4b4c;
+}
+.workshop-logo {
+  background-color: #fff;
+  border: 3px solid #e6e6e6;
+  float: left;
+  margin: 0 10px;
+  padding: 60px 0;
+  width: 30%;
+}
+.font-awesome-content > h3 {
+  color: #4b4b4c;
+}
+.workshop .font-awesome {
+  color: #63d083;
+  font-size: 60px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  width: 100px;
+}
+/*=====  End of WorkShop Section  ======*/
+/*=======================================
+=            Faculty Wrapper            =
+=======================================*/
+.faculty {
+	padding: 70px 0;
+  	width: 100%;
+  	background-color: #fff;
+}
+.faculty-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+  max-width: 1170px;
+  width: 100%;
+}
+.faculty-wrapper-member > h1 {
+  color: #4B4B4C;
+}
+.faculty-wrapper-content {
+  padding: 40px 0;
+  overflow: hidden;
+}
+.faculty-people {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+}
+.faculty-people {
+  box-sizing: border-box;
+  float: left;
+  padding: 0 30px;
+  width: 33.3%;
+}
+.faculty .faculty-image {
+  width: 50%;
+  margin: 0 auto;
+}
+.faculty img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #e6e6e6;
+  padding: 4px;
+}
+.faculty-decription > h2 {
+  color: #2b5d92;
+  font-weight: normal;
+}
+.faculty-decription  p{
+    color: #4b4b4c;
+    font-size: 17px;
+    line-height: 20px;
+    margin-left: 15px;
+}
+/*=====  End of Faculty Wrapper  ======*/
+/*=========================================
+=            Customers Section            =
+=========================================*/
+.customers {
+  background-color: #111111;
+  padding: 50px 0;
+  width: 100%;
+}
+.customers-wrapper {
+  color: #fff;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  max-width: 1170px;
+  width: 100%;
+}
+.customer-wrapper-content1 > hr {
+  border: 2px solid #fff;
+}
+.customer-wrapper-content2 {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.customers .subcontent {
+  background-color: #fff;
+  color: #717F86;
+  padding: 10px;
+  text-align: left;
+  width: 47.2%;
+}
+.customers .subcontent1 {
+float:left;
+}
+.customers .subcontent2 {
+float:right;
+}
+/*=====  End of Customers Section  ======*/
+/*======================================
+=            Course Section            =
+======================================*/
+.courses {
+  background-color: #fff;
+  padding: 50px 0;
+  width: 100%;
+}
+.course-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+.course-wrapper-image {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.courses .images {
+  float: left;
+  margin: 1px 3px;
+  width: 32%;
+}
+.courses .images > img {
+  width: 100%;
+}
+/*=====  End of Course Section  ======*/
+/*=======================================
+=            Pricing-Section            =
+=======================================*/
+.pricing {
+	background-color: #F7F7F7;
+  	padding: 50px 0;
+  	width: 100%;
+}
+.pricing .pricing-wrapper {
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  max-width: 1170px;
+  width: 100%;
+}
+.pricing-wrapper-content{
+	overflow: hidden;
+	margin-top: 10px;
+}
+.pricing-logo {
+  background-color: #fff;
+  border: 3px solid #e6e6e6;
+  float: left;
+  margin: 0 10px;
+  overflow: hidden;
+  padding: 20px 0 0px;
+  width: 30%;
+}
+.pricing-logo > hr {
+  border: 1px solid #000;
+  width: 80%;
+  margin-bottom: 25px;
+}
+.pricing .pricing-group {
+  float: left;
+  text-align: right;
+  width: 40%;
+}
+.pricing .font-awesome {
+  padding-right: 5px;
+  padding-top: 10px;
+  color: #717F86;
+}
+.pricing-group.font-awesome-content > h3 {
+  font-size: 60px;
+  margin: 0;
+  text-align: left;
+  color: #717F86;
+}
+.pricing .purchase {
+  background-color: #5FCF80;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 150px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+/*=====  End of Pricing-Section  ======*/
+/*=======================================
+=            Contact Section            =
+=======================================*/
+.contact {
+	background-color: #fff;
+  	padding: 50px 0;
+  	width: 100%;
+}
+.contact-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+.contact-wrapper-content2 {
+  overflow: hidden;
+  padding-top: 10px;
+}
+.contact .contact-form {
+  margin: 0 1%;
+  width: 48%;
+}
+.contact .contact-form1 {
+ float: left;
+}
+.contact .contact-form2 {
+  float: right;
+}
+.contact-form.contact-form1 input.text {
+  width: 100%;
+  padding: 11px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.contact-form.contact-form1 > form {
+  overflow: hidden;
+}
+.contact .button {
+  background-color: #5fcf80;
+  border: medium none;
+  color: #fff;
+  float: left;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 50%;
+  cursor: pointer;
+}
+.contact textarea {
+  box-sizing: border-box;
+  padding:16px 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact .btnshow{
+	display: none;
+}
+/*=====  End of Contact Section  ======*/
+/*======================================
+=            Footer Section            =
+======================================*/
+footer {
+	background-color: #111111;
+  	padding: 50px 0;
+  	width: 100%;
+}
+.footer-wrapper {
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  max-width: 1170px;
+  width: 100%;
+}
+.footer-wrapper > h2 {
+  color: #292929;
+}
+.footer-form input {
+  border: medium none;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 15px;
+  width: 220px;
+  background-color: #292929;
+  color: #7D998A;
+}
+
+.arrow {
+  padding-left: 5px;
+}
+
+.footer-wrapper .btn {
+  background-color: #5fcf80;
+  border: medium none;
+  border-radius: 25px;
+  color: #fff;
+  margin: 10px;
+  padding: 15px;
+  width: 175px;
+  cursor:pointer;
+}
+.footer-wrapper .social {
+  border-bottom: 1px solid #292929;
+  padding-bottom: 20px;
+}
+.footer-wrapper .social > ul {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0;
+  padding: 20px 0 0;
+}
+.footer-wrapper .social li {
+  display: inline-block;
+  margin: 0 25px 0 25px;
+}
+.footer-wrapper .social a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-content h3 {
+  color: #cccccc;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+.footer-content {
+  padding-top: 10px;
+}
+.footer-content a{
+ text-decoration: none;
+ color: #fff;
+}
+/*=====  End of Footer Section  ======*/
+
+@media only screen and (max-width:992px){
+	.feature .feature-logo{
+		width: 100%;
+	}
+
+	.feature2 .feature-review{
+		width:100%;
+	}
+	.courses .images{
+		width:49%;
+	}
+}
+
+@media only screen and (max-width:767px){
+	.workshop .workshop-logo{
+		width:100%;
+	}
+	.faculty .faculty-people{
+		width:100%;
+	}
+	.customers .subcontent{
+		width:100%;
+	}
+	.courses .images{
+		width:99%;
+	}
+	.pricing .pricing-logo{
+		width:100%;
+	}
+	 .footer-form .btn{
+		width: 95%;
+	}
+	.footer-form input{
+		width: 90%;
+	}
+	.contact .contact-form{
+		width:98%;
+	}
+	.contact .btnshow{
+		display: block;
+	}
+	.contact .btnhide{
+		display: none;
+	}
+	.nav{
+		display:none;
+	}
+	.feature2 .logo-container > span {
+  font-size: 111px;
+}
+}

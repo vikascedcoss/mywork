@@ -1,0 +1,48 @@
+#main_header{
+
+	.logo{
+		font-size:25px;
+		color:#000;
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+	padding:20px;
+	.social-icons{
+		margin-top:14px;
+		.social_menus {
+			@include round-social-icons;
+		}
+		.search{
+			border:0;
+		}
+		img{
+			height:24px;
+		}
+
+		
+	}
+	.menu_items{
+		li{
+			a
+			{
+				@include link_decoration;
+				text-transform: $upper;
+			}
+		}
+
+	}
+
+	#header_content{
+		padding:50px 0;
+		a {
+			@include link_decoration;
+			@include header-logo;
+			
+		}
+		p{
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size:15px;
+		}
+	}
+}

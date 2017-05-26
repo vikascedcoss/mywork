@@ -1,0 +1,733 @@
+
+@font-face {
+	font-family: 'Satisfy';
+	src: url('../fonts/satisfy/Satisfy.eot');
+	src: url('../fonts/satisfy/Satisfy.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/satisfy/Satisfy.woff2') format('woff2'),
+  url('../fonts/satisfy/Satisfy.woff') format('woff'),
+  url('../fonts/satisfy/Satisfy.ttf') format('truetype'),
+  url('../fonts/satisfy/Satisfy.svg#Satisfy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playball';
+  src: url('../fonts/playball/Playball-Regular.eot');
+  src: url('../fonts/playball/Playball-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/playball/Playball-Regular.woff2') format('woff2'),
+  url('../fonts/playball/Playball-Regular.woff') format('woff'),
+  url('../fonts/playball/Playball-Regular.ttf') format('truetype'),
+  url('../fonts/playball/Playball-Regular.svg#Playball-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: url('../fonts/OpenSans/OpenSans.eot');
+  src: url('../fonts/OpenSans/OpenSans.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans/OpenSans.woff2') format('woff2'),
+  url('../fonts/OpenSans/OpenSans.woff') format('woff'),
+  url('../fonts/OpenSans/OpenSans.ttf') format('truetype'),
+  url('../fonts/OpenSans/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/monresrat/Montserrat-Regular.eot');
+  src: url('../fonts/monresrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/monresrat/Montserrat-Regular.woff2') format('woff2'),
+  url('../fonts/monresrat/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/monresrat/Montserrat-Regular.ttf') format('truetype'),
+  url('../fonts/monresrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+/*======================================
+=            Section Header            =
+======================================*/
+
+.header-wrapper {
+  background-image: url("../images/dummy1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 221px;
+  padding-top: 190px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-wrapper::after {
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+
+.logo {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.logo img {
+  height: 148px;
+  width: 150px;
+}
+
+.logo h1 {
+  font-family: Playball;
+  font-size: 53px;
+  margin: 25px;
+
+}
+
+.logo .hidden{
+    visibility: hidden;
+}
+.nav {
+  background-color: #111111;
+  bottom: -221px;
+  padding: 26px 0;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.nav-fix &{
+  background-color: #111111;
+  bottom: -221px;
+  padding: 26px 0;
+  position: fixed;
+  text-align: center;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul  li {
+  display: inline-block;
+}
+
+ul li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 16px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 2;
+}
+/*=====  End of Section Header  ======*/
+
+/*=====================================
+=            Section About            =
+=====================================*/
+.about-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about h2 {
+  color: #333;
+  font-family: "Playball",cursive;
+  font-size: 35px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.about-content {
+  padding: 0 100px;
+}
+
+.about-content > img {
+  width: 100%;
+}
+
+.about span{
+  color: #CC580C;
+}
+
+.about h3 {
+  font-size: 16px;
+  color: #333333;
+  font-family: open-sans;
+}
+
+.about-image::before {
+  background-color: #f8f8f8;
+  bottom: 0;
+  border: 1px solid #d1d1d1;
+  box-shadow: 0 1px 4px 0 #d1d1d1 inset;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(-3deg);
+  width: 100%;
+  z-index: -1;
+}
+
+.about-image::after {
+  background-color: #f8f8f8;
+  bottom: 0;
+  border: 1px solid #d1d1d1;
+  box-shadow: 0 1px 4px 0 #d1d1d1 inset;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(3deg);
+  width: 100%;
+  z-index: -1;
+}
+
+.about-image {
+  background-color: #f8f8f8;
+  border: 1px solid #d1d1d1;
+  box-shadow: 0 1px 4px 0 #d1d1d1 inset;
+  float: left;
+  margin-top: 5%;
+  padding: 2%;
+  position: relative;
+  width: 40%;
+}
+
+.about-image.image1 {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.about-image.image2 {
+  margin-left: 4%;
+}
+.about-image > img {
+  width: 100%;
+}
+
+.about-image h2 {
+  font-family: "Montserrat",sans-serif;
+  font-size: 25px;
+  font-weight: bold !important;
+  margin-top: 5px;
+}
+
+.about-image a {
+  color: #d2580c;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.about-image p {
+  color: #333333;
+  font-family: open-sans;
+  font-size: 14px;
+  text-align: left;
+}
+/*=====  End of Section About  ======*/
+
+/*============================================
+=            Section Specialities            =
+============================================*/
+.wrapper-specialities {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.specialities-content {
+  padding: 0 100px 15px;
+}
+
+.specialities h2 {
+  color: #333;
+  font-family: "Playball",cursive;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.specialities-content > img {
+  width: 100%;
+}
+
+.specialities span{
+  color: #CC580C;
+}
+
+.specialities h3 {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight:700;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.specialities-items {
+  border: 1px solid #eeeeee;
+  box-shadow: 0 0 0 16px #fff inset, 0 0 0 17px #eee inset, 0 0 0 18px #fff inset, 0 0 0 19px #eee inset, 0 0 0 20px #fffffe inset, 0 0 0 21px #eee inset, 0 4px 20px rgba(0, 0, 0, 0.1);
+  float: left;
+  overflow: hidden;
+  padding: 4%;
+  width: 21%;
+}
+
+
+.specialities-items:nth-child(3) {
+  margin: 0 4%;
+}
+
+
+.specialities-items:nth-child(2) {
+  margin-left: 2%;
+}
+
+.specialities-items h2 {
+  border-bottom: 5px double #eeeeee;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 0 20px 18px;
+  color: #CC580C;
+}
+.specialities-items p {
+  color: #777777;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 22px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+.specialities .img {
+  float: left;
+  margin: 0 8px 0 0;
+}
+
+.specialities .img > img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.events-gallery > h2 {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 15px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.events-gallery > p {
+  color: #777;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 15px 15px;
+  text-align: left;
+}
+
+
+
+/*=====  End of Section Specialities  ======*/
+
+/*======================================
+=            Section Events            =
+======================================*/
+.wrapper-events {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.specialities-content {
+  padding: 0 100px 15px;
+}
+
+.specialities-content > h2 {
+  color: #333;
+  font-family: "Playball",cursive;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.events span{
+  color: #CC580C;
+}
+
+.events-gallery {
+  background-color: #333;
+  color: #fff;
+  float: left;
+  margin: 1% 1% 1% 0;
+  width: 24%;
+  transition: .2s linear all;
+  cursor: pointer;
+}
+
+
+.events-gallery:hover {
+  opacity: .56;
+  transition: .2s linear all;
+}
+
+.events-gallery img {
+  width: 100%;
+}
+/*=====  End of Section Events  ======*/
+
+/*=======================================
+=            Section Clients            =
+=======================================*/
+
+.clients-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.clients-content {
+  padding: 0 100px 15px;
+}
+
+.clients-content > h2 {
+  color: #333;
+  font-family: "Playball",cursive;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.clients-content > img {
+  width: 100%;
+}
+
+.clients-content span{
+  color: #CC580C;
+}
+
+.clients-content h3 {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+blockquote::before {
+  color: #cc580c;
+  content: "“";
+  font-family: Georgia;
+  font-size: 120px;
+  left: -10px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+blockquote {
+  border: 0 none;
+  font-size: 13px;
+  font-style: italic;
+  margin: 0;
+  padding: 20px 50px 10px;
+  text-align: left;
+  position: relative;
+  color: #777;
+}
+
+blockquote cite{
+    color: #cc580c;
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+
+
+
+
+/*=====  End of Section Clients  ======*/
+
+/*=======================================
+=            Section Hire us            =
+=======================================*/
+.wrapper-hire-us {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 100px 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hire-us-content {
+  padding: 0 100px 15px;
+}
+
+.hire-us-content > h2 {
+  color: #333;
+  font-family: "Playball",cursive;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.hire-us-content > img {
+  width: 100%;
+}
+
+.hire-us-content span{
+  color: #CC580C;
+}
+
+.hire-us-content h3 {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.hire-us .form {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+.hire-us input {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 47.7%;
+}
+
+.hire-us input:first-child {
+  margin-right: 2%;
+}
+
+.hire-us input:nth-child(2) {
+  margin-left: 2%;
+}
+
+.hire-us textarea {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  margin: 3% auto;
+  padding: 15px 30px;
+  width: 100%;
+}
+
+.hire-us button {
+  background-color: #333;
+  border: medium none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px 40px;
+  float: left;
+  font-family: 'Montserrat';
+}
+
+.hire-us button:hover {
+  background-color: #CC580C;
+}
+
+
+/*=====  End of Section Hire us  ======*/
+
+
+/*======================================
+=            Section Footer            =
+======================================*/
+footer{
+  background-color: #CC580C;
+  color: #fff;
+}
+
+/*.footer-wrapper::before {
+  background-color: red;
+  border-radius: 50%;
+  content: "a";
+  padding: 20px 25px;
+  position: absolute;
+  top: 0;
+}*/
+
+.footer-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 80px 0 30px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-up {
+  color: #cc580c;
+  height: 75px;
+  left: 0;
+  line-height: 75px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -36px;
+  width: 75px;
+}
+.scroll-up > a {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #cc580c;
+  padding: 29px 27px 23px;
+}
+
+.footer-wrapper ul li a {
+  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 14px 16px;
+}
+
+.footer-list a:hover{
+  background-color: #2A2A2A;
+}
+
+.footer-wrapper  ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-wrapper  p {
+  font-size: 12px;
+  margin: 4% 0 0;
+  text-transform: uppercase;
+}
+
+
+
+
+/*=====  End of Section Footer  ======*/
+
+
+@media only screen and (max-width:992px){
+  .nav {
+    display:none;
+  }
+  .about-image {
+    width: 88%;
+  }
+  .image2{
+    margin-top: 10%;
+  }
+  .about-content {
+    padding: 0 7px;
+  }
+  .specialities-content {
+    padding: 0 7px 15px;
+  }
+  .specialities-items {
+    width: 88%;
+  }
+  .specialities-items:nth-child(2) {
+    margin-left: 2%;
+  }
+
+  .specialities-items:nth-child(3) {
+    margin-left: 2%;
+  }
+
+  .specialities-items:nth-child(4) {
+    margin-left: 2%;
+  }
+  .events-gallery {
+    margin: 1% 0 1% 1%;
+    width: 98%;
+  }
+
+  .hire-us input {
+  width:98%;
+  margin:0 1%!important;
+ }
+
+  .hire-us input:nth-child(2) {
+    margin-top: 3%!important;
+  }
+
+  .hire-us textarea {
+      width:98%;
+  }
+
+  .hire-us button{
+    margin-left: 1%;
+  }
+  .specialities-items {
+  width: 76%;
+  padding: 10%;
+ }
+
+  .clients-content {
+    padding: 5%;
+  }
+  .hire-us-content {
+    padding: 5%;
+  }
+
+  .footer-wrapper ul li a {
+  margin: 0;
+ 
+}
+
+.footer-wrapper  p {
+
+  margin: 10% 0 0;
+
+}
+}

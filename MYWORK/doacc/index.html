@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FORM</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="form-wrapper">
+		<h2>What would you like zip with?</h2>
+		<form action="" method="" name="">
+			<select name="" id="drop_one" onchange="showDiv(this)">
+				<option value="SELECT">SELECT</option>
+				<option value="TRANSITION">TRANSITION</option>
+				<option value="COPYRIGHTING">COPYRIGHTING</option>
+				<option value="PROOFLODING">PROOFLODING</option>
+			</select>
+			<select name="" id="drop_two">
+				<option value="">SELECT</option>
+				<option value="">OPTION 1</option>
+				<option value="">OPTION 2</option>
+				<option value="">OPTION 3</option>
+			</select><br>
+			<h5 class="upload_header">UPLOAD DOC.</h5><input type="file" /><br>
+			<h3>DESCRIPTION</h3>
+			<textarea name="" id="" cols="50" rows="10" placeholder="DESCRIPTION"></textarea>
+			<h3>CONTACT INFO</h3>
+			<dl>
+				<dd><h5>NAME:</h5></dd>
+				<dt><input type="text" placeholder="NAME"></dt>
+				<dd><h5>EMAIL:</h5></dd>
+				<dt><input type="text" placeholder="EMAIL"></dt>
+				<dd><h5>PHONE:</h5></dd>
+				<dt><input type="text" placeholder="PHONE"></dt>
+				<dd><h5>COUNTRY:</h5></dd>
+				<dt><input type="text" placeholder="COUNTRY"></dt>
+				<dd><h5>PREFFERED TIME:</h5></dd>
+				<dt><input type="text" placeholder="PREFFERED TIME"></dt>
+			</dl>
+			<input type="submit" value="SUBMIT" class="btn-submit">
+		</form>
+	</div>
+	<script>
+		function showDiv(elem)
+		{
+			
+		
+			if(elem.value == "TRANSITION")
+				{
+					document.getElementById('drop_two').style.display = "inline-block";
+
+
+				}
+				else if(elem.value == "SELECT")
+				{
+					document.getElementById('drop_two').style.display = "none";
+
+				}
+				else if(elem.value == "COPYRIGHTING")
+				{
+					document.getElementById('drop_two').style.display = "none";
+
+				}
+				else if(elem.value == "PROOFLODING")
+				{
+					document.getElementById('drop_two').style.display = "none";
+
+				}
+
+			}
+
+			
+		
+			
+
+
+	</script>
+</body>
+</html>

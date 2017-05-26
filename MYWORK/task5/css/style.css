@@ -1,0 +1,107 @@
+body {
+	overflow: hidden;
+	width: 100%
+
+}
+div.counter{
+	border :10px solid transparent;
+	border-image: url(../images/border.png) 40 30 35 40 round;
+
+}
+
+
+div.icon1 {
+	background   : rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll -3px -4px;
+	border-radius: 50%;
+	height       : 70px;
+	width        : 70px;
+	float        : left;
+	margin       : 10px;
+}
+
+div.icon2 {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll -80px -4px;
+  border-radius: 50%;
+  float: left;
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+div.icon3 {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll -232px -4px;
+  border-radius: 50%;
+  float: left;
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+div.icon4 {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll -309px -5px;
+  border-radius: 50%;
+  float: left;
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+
+div.icon1:hover {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll -3px -235px;
+  border-radius: 50%;
+  float: left;
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+div.icon2:hover {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll -80px -235px;
+  border-radius: 50%;
+  float: left;
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+div.icon3:hover {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll -232px -235px;
+  border-radius: 50%;
+  float: left;
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+div.icon4:hover {
+  background: rgba(0, 0, 0, 0) url("../images/sprite.png") repeat scroll -309px -236px;
+  border-radius: 50%;
+  float: left;
+  height: 70px;
+  margin: 10px;
+  width: 70px;
+}
+
+.counter {
+  display: inline-block;
+  width: 95%;
+  counter-reset: section;
+}
+h1{
+	counter-reset: subsection;
+}
+
+
+.counter h1:before{
+	counter-increment: section;
+	content: "Heading" counter(section)". ";
+}
+
+h2:before{
+	counter-increment: subsection;	
+	content: counter(section) "." counter(subsection )" ";
+}
+
+
+
