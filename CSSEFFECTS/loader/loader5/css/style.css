@@ -1,0 +1,159 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:rgba(0,0,0,0.8);
+}
+.loader-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  padding: 200px 0;
+  margin: 0 auto;
+}
+
+.loader-holder {
+  margin: 0 auto;
+  padding: 200px 0;
+  width: 420px;
+  position: relative;
+}
+
+.loader{
+    border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.loader.loader-1 {
+  background-color:#C1E937;
+  bottom: 0;
+  height: 0px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0s;
+
+}
+
+.loader.loader-2 {
+  background-color: #28ECE5;
+  bottom: 0;
+  height: 0px;
+  left: 40px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.1s;
+}
+
+.loader.loader-3 {
+  background-color: #1814AA;
+  bottom: 0;
+  height: 0px;
+  left: 80px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.2s;
+}
+
+.loader.loader-4 {
+  background-color:#35ED11;
+  bottom: 0;
+  height: 0px;
+  left: 120px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.3s;
+}
+
+.loader.loader-5 {
+  background-color: #E41BD8;
+  bottom: 0;
+  height: 0px;
+  left: 160px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.4s;
+}
+
+.loader.loader-6 {
+  background-color: #384D69;
+  bottom: 0;
+  height: 0px;
+  left: 200px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.loader.loader-7 {
+  background-color: #26B0A1;
+  bottom: 0;
+  height: 0px;
+  left: 240px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.6s;
+}
+
+.loader.loader-8 {
+  background-color: #BB303D;
+  bottom: 0;
+  height: 0px;
+  left: 280px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.7s;
+}
+
+.loader.loader-9 {
+  background-color: #8B26B0;
+  bottom: 0;
+  height: 0px;
+  left: 320px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.8s;
+}
+
+.loader.loader-10 {
+  background-color: #0A9552;
+  bottom: 0;
+  height: 0px;
+  left: 360px;
+  position: absolute;
+  width: 30px;
+  animation: animate 2s linear infinite;
+  animation-delay: 0.9s;
+}
+
+@keyframes animate{
+	 0%{
+	height:0px;
+  background-color:#28ECE5;
+	}
+	15%{
+    height:100px;
+    background-color:#E41BD8;
+  }30%{
+    height:200px;
+    background-color:#35ED11;
+  }50%{
+    height:300px;
+    background-color:#C1E937;
+  }65%{
+    height:200px;
+    background-color:#1814AA;
+  }80%{
+    height:100px;
+    background-color:#384D69;
+  }100%{
+		height:0px;
+    background-color:#26B0A1;
+	}
+}

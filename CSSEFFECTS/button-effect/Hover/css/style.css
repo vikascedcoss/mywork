@@ -1,0 +1,31 @@
+div {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  /*background-image: rgba(0, 0, 0, 0) linear-gradient(to right, red, blue, green, yellow, orange) repeat scroll 0 0;*/
+  border: 3px solid red;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-decoration: none;
+  text-shadow: 4px 2px 1px rgba(0,0,0,0.5);
+  width: 200px;
+  background: linear-gradient(to right , #fda085, #f6d365, #84fab0 , #8fd3f4 , #84fab0);
+  transition: 0.5s linear all;
+     background-size: 200%, auto;
+}
+
+a:hover {
+  background: linear-gradient(to right, #84fab0, #8fd3f4, #84fab0 , #f6d365, #fda085) repeat scroll right center;
+  transform: scale(1.1, 1.1);
+   transition: 0.5s linear all;
+   background-size: 200%, auto;
+}

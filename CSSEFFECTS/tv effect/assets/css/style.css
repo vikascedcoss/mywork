@@ -1,0 +1,27 @@
+.tv-wrap {
+  background-image: url("../images/bg-macbook.png");
+  background-repeat: no-repeat;
+  height: 333px;
+  position: relative;
+  max-width: 350px;
+  display: inline-block;
+  margin: 10px;
+  width: 100%;
+
+}
+
+.screen-wrap {
+  background-image: url("../images/layout2.jpg");
+  background-position: 0 0;
+  bottom: 126px;
+  left: 13px;
+  position: absolute;
+  right: 14px;
+  top: 13px;
+    transition: 2s ease-in-out all;
+}
+
+.screen-wrap:hover {
+  background-position: 0 100%;
+
+}

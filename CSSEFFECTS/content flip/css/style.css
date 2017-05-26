@@ -1,0 +1,49 @@
+.image-wrapper{
+	position: relative;
+}
+.content-wrapper {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  color: #fff;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0px;
+   transition: 500ms linear all;
+   width: 50%;
+
+}
+
+.content {
+  margin: 15% auto;
+  width: 70%;
+}
+
+.content a {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.content a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content p {
+  padding-bottom: 20px;
+}
+
+.image-wrapper:hover .content-wrapper {
+  position: absolute;
+  /*transform: rotate3d(0, 1, 0, -180deg);*/
+   transform: rotateY(180deg);
+  transform-origin: 0 50% 0;
+  transition: all 500ms linear 0s;
+}
+
+.image-wrapper:hover .content {
+  position: absolute;
+  transform: rotateY(180deg);
+  transition: all 500ms linear 0s;
+}

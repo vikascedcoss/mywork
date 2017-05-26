@@ -1,0 +1,55 @@
+html {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.container {
+  align-self: center;
+  margin: 250px auto;
+  width: 200px;
+}
+.circle, .circle0, .circle1, .circle2, .circle3, .circle4, .circle5 {
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	margin: 10px;
+}
+
+.circle0{
+	background-color: red;
+	animation: one 1.5s infinite ease-in-out;
+}
+.circle1{
+	background-color: green;
+	animation: one 1.5s infinite ease-in-out;
+	animation-delay:.2s;
+}
+.circle2{
+	background-color: blue;
+	animation: one 1.5s infinite ease-in-out;
+}
+.circle3{
+	background-color: purple;
+	animation: one 1.5s infinite ease-in-out;
+	animation-delay:.2s;
+}
+.circle4{
+	background-color: pink;
+animation: one 1.5s infinite ease-in-out;
+}
+.circle5{
+	background-color: yellow;
+	animation: one 1.5s infinite ease-in-out;
+	animation-delay:.2s;
+} 
+
+@keyframes one{
+	0%{
+		transform : translateX(0px);
+	}
+	50% {
+		transform: translateX(100px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+	
+}

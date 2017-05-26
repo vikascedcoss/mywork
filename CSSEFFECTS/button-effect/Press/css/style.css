@@ -1,0 +1,25 @@
+div {
+  margin: 20% auto;
+  text-align: center;
+}
+
+a {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color;
+  border-image: none;
+  border-style: solid;
+  border-width: 1px 1px 3px;
+  box-shadow: 3px 2px 2px 0px;
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  margin-top: 3px;
+  box-shadow: 5px 4px 2px 0px;
+}

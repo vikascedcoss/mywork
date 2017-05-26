@@ -1,0 +1,97 @@
+.main-wrapper {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.loader-contain {
+  height: 100px;
+  margin: 200px auto 0;
+  position: relative;
+  width: 100px;
+}
+.loader {
+  border-radius: 50%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  width: 100px;
+  animation:animate 3s linear infinite;
+}
+
+.loader-one {
+  position: absolute;
+  top: 0;
+  height: 10px;
+  width: 10px ;
+  background-color: #000;
+  border-radius: 50%;
+
+}
+
+.two{
+	animation-delay:.4s;
+}
+
+.three{
+	animation-delay:.3s;
+}
+
+.four{
+	animation-delay:.2s;
+}
+.five{
+	animation-delay:.1s;
+}
+.six{
+	animation-delay:0s;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotate(180deg);
+		animation-timing-function: ease-out;
+	}
+
+	7% {
+	
+		transform: rotate(300deg);
+		animation-timing-function: linear;
+		// origin:0%;
+	}
+
+	30% {
+		transform:rotate(410deg);
+		animation-timing-function: ease-in-out;
+		// origin:7%;
+	}
+
+	39% {
+	
+		transform: rotate(645deg);
+		animation-timing-function: linear;
+		// origin:30%;
+	}
+
+	70% {
+		transform: rotate(770deg);
+		animation-timing-function: ease-out;
+		// origin:39%;
+	}
+
+	75% {
+		opacity: 0;
+		transform: rotate(900deg);
+		animation-timing-function: linear;
+		// origin:70%;
+	}
+
+	76% {
+		opacity: 0;
+		transform:rotate(900deg);
+	}
+
+	100% {
+		opacity: 0;
+		transform: rotate(900deg);
+	}
+}

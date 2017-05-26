@@ -1,0 +1,40 @@
+.image-wrapper{
+	position: relative;
+}
+.content-wrapper {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  color: #fff;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -500px;
+   transition: 500ms linear all;
+
+}
+
+.content {
+  margin: 15% auto;
+  width: 70%;
+}
+
+.content a {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.content a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content p {
+  padding-bottom: 20px;
+}
+
+.image-wrapper:hover .content-wrapper {
+  position: absolute;
+  transition: 500ms linear all;
+  top: 0px;
+}

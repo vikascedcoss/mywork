@@ -1,0 +1,47 @@
+.image-wrapper {
+  background-image: url("../images/childhood.png");
+  background-position: center center;
+  background-size: cover;
+  border: 1px solid black;
+  height: 400px;
+/*  transform: rotateY(180deg);*/
+  transition: all 1s linear 0s;
+}
+.col-lg-6.content-overlay {
+  height: 400px;
+  background: rgba(0,0,0,0.5);
+}
+.content-wrapper {
+  color: #fff;
+  margin: 114px auto;
+  width: 70%;
+
+}
+
+.content-wrapper a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+}
+
+.content-wrapper a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.content-wrapper p {
+  padding-bottom: 17px;
+}
+
+.image-wrapper:hover {
+  transform: rotateY(180deg);
+  transition: all 1s linear 0s;
+}
+.image-wrapper:hover .content-overlay{
+  transform: rotateY(180deg);
+  transition: all 1s linear 0s;
+}

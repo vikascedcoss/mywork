@@ -1,0 +1,88 @@
+.wrapper {
+  width: 1260px;
+  margin: 0 auto;
+  font-family: cursive;
+}
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main{
+	width:400px;
+	margin: 0 auto;
+	background-color: #d1d1d1;
+	height:500px;
+	position: relative;
+	float:left;
+	margin: 10px;
+}
+
+.main img{
+	width:100%;
+	height:100%;
+	opacity: 1;
+	transform: rotate3d(0, 10, 0, 0deg);
+	transition: all 500ms linear 0s;
+}
+.main a {
+	background-color: #b9b6b6;
+	color: #fff;
+	border: 3px solid #000;
+	left: 0;
+	margin: 0 auto;
+	opacity: 0;
+	padding: 20px 40px;
+	position: absolute;
+	right: 0;
+	top: 45%;
+	width: 40%;
+	text-decoration: none;
+	opacity: 0;
+	transition: all 300ms linear 0s;
+	z-index: 2;
+}
+
+
+a:hover{
+	box-shadow: 0 0 10px #767680 ;
+	text-shadow: 1px 1px 2px blue;
+}
+
+.main:hover img {
+	opacity: 0;
+	transform: rotate3d(0, 10, 0, 90deg);
+	transition: all 500ms linear 0s;
+}
+
+.main:hover a{
+	opacity: 1;
+	transition: all 500ms linear 0s, text-shadow 200ms linear , box-shadow 200ms linear;
+
+}
+
+.form-wrapper {
+  background-color: #cccccc;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  opacity:0;
+  transition: 500ms linear all;
+  z-index: 1;
+}
+
+a:focus + .form-wrapper{
+	bottom: 0;
+	position: absolute;
+	opacity:1;
+	transition: 500ms linear all;
+	z-index: 2;
+}
+
+a:focus {
+	position: absolute;
+	top:5%;
+	transition: 500ms linear all;
+}
